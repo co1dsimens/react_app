@@ -1,0 +1,21 @@
+.App {
+  text-align: left;
+  background-color: #282c34;
+  padding: 40px 40px 0 40px ;
+}
+
+.App-header {
+  display: flex;
+  color: white;
+  border-bottom: 1px solid #fff;
+  justify-content: space-between;
+}
+
+.App-title{
+  display: block;
+  height: fit-content;
+  margin: 30px 10px 20px 40px;
+}
+.App-body{
+  height: 500px;
+}

@@ -1,0 +1,66 @@
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0, .5);
+    display: flex;
+    padding:  5rem 0 0 0;
+    justify-content: center;
+}
+.modal_body
+{
+  padding: 2rem;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: darkslategray;
+}
+
+.button.efect {
+    color: #fff;
+    padding: 0;
+    width: auto;
+    height: 30px;
+    background: inherit;
+    border: none;
+    margin: 30px 10px 20px 10px;
+  
+  }
+  .button.efect.efect:after
+  {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 10%;
+    left: 0;
+    background-color: #fff;
+    height: 2px;
+    transition: all 0.6s ease;
+    transform: scale(1);
+  }
+  .button.efect.efect::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 67%;
+    left: 0;
+    background-color: #fff;
+    height: 2px;
+    transition: all 0.6s ease;
+    transform: scale(1);
+  
+  }
+  .button.efect.efect:hover::after
+  {
+    transform: scale(1);
+  }
+  .button.efect.efect:hover::before{
+    top: 0;
+    transform: scale(1);
+  }
